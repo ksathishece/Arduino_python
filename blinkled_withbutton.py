@@ -1,8 +1,8 @@
 import pyfirmata
 import time
 
-board = pyfirmata.Arduino('COM4')
-
+#board = pyfirmata.Arduino('COM4')
+board = pyfirmata.Arduino('/dev/ttyACM0')
 it = pyfirmata.util.Iterator(board)
 it.start()
 

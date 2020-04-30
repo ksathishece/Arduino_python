@@ -1,7 +1,7 @@
 import pyfirmata
 import time
 
-board = pyfirmata.Arduino('COM4')
+board = pyfirmata.Arduino('/dev/ttyACM0')
 
 while True:
     board.digital[12].write(1)
